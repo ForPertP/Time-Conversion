@@ -1,8 +1,7 @@
 string timeConversion(string s)
 {
-    string hour = s.substr(0, 2);
-    int time = std::stoi(hour) + 12;
-
+    int time = std::stoi(s.substr(0, 2)) + 12;
+    
     if (s[8] == 'P')
     {
         if (time == 24)
